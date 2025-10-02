@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+
+
+  <title>Safe Navigation of Bipedal Robots via Koopman Operator-Based Model Predictive Control</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">Safe Navigation of Bipedal Robots via<br>Koopman Operator-Based Model Predictive Control</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://jhkim.me" target="_blank">Jeonghwan Kim</a>,
+              </span>
+              <span class="author-block">
+                <a href="https://y8han.github.io/" target="_blank">Yunhai Han</a>,
+              </span>
+        		  <span class="author-block">
+                <a href="https://harishravichandar.com/" target="_blank">Harish Ravichandar</a>,
+              </span>
+        		  <span class="author-block">
+                <a href="https://faculty.cc.gatech.edu/~sha9/" target="_blank">Sehoon Ha</a>
+              </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Georgia Institute of Technology
+                      <!-- <br>Under Review</span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2409.14736" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2409.14736" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Image carousel -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <img src="static/images/01_Overview.png"/>
+        <h2 class="subtitle has-text-centered">
+          Overview
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/02_TrainingTime.png"/>
+        <h2 class="subtitle has-text-centered">
+          Training Time
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/03_LongTermPrediction.png"/>
+        <h2 class="subtitle has-text-centered">
+          Long Term Prediction
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/04_PathTracking.png"/>
+        <h2 class="subtitle has-text-centered">
+          Path Tracking
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/05_SafeNavigation.png"/>
+        <h2 class="subtitle has-text-centered">
+          Safe Navigation
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/06_QuantitativePerformance.png"/>
+        <h2 class="subtitle has-text-centered">
+          Quantitative Performance
+        </h2>
+      </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+Nonlinearity in dynamics has long been a major challenge in robotics, often causing significant performance degradation in existing control algorithms. For example, the navigation of bipedal robots can exhibit nonlinear behaviors even under simple velocity commands, as their actual dynamics are governed by complex whole-body movements and discrete contacts. In this work, we propose a novel safe navigation framework inspired by Koopman operator theory. We first train a low-level locomotion policy using deep reinforcement learning, and then capture its low-frequency, base-level dynamics by learning linearized dynamics in a high-dimensional lifted space using Dynamic Mode Decomposition. Then, our model-predictive controller (MPC) efficiently optimizes control signals via standard quadratic objective and the linear dynamics constraint in the lifted space. We demonstrate that the Koopman-based model more accurately predicts bipedal robot trajectories than baseline approaches. Furthermore, we show that the proposed navigation framework achieves improved safety with better success rates in dense environments with narrow passages.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <!--/ Paper video. -->
+    <div class="hero-body">
+      <video poster="" id="tree" controls muted loop height="100%">
+        <!-- Your video here -->
+        <source src="static/videos/video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Supplementary video
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
